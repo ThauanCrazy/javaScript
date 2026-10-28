@@ -26,11 +26,11 @@ function CalcularIMC(P,A) {
     return P / (A * A)
 }
 function ClassificaoIMC(IMC) {
-    if (IMC <= 18.5) {
+    if (IMC < 18.5) {
         alert("Seu IMC:" + IMC + "Abaixo do peso")
-    } else if (IMC > 18.5 && IMC <= 24.9) {
+    } else if (IMC > 18.5 && IMC < 24.9) {
         alert("Seu IMC:" + IMC + "Peso adequado")
-    } else if (IMC > 24.9 && IMC <= 29.9) {
+    } else if (IMC > 24.9 && IMC < 29.9) {
         alert("Seu IMC:" + IMC + "Sobrepeso")
     } else if (IMC > 29.9) {
         alert("Seu IMC:" + IMC + "Obeso")
@@ -44,4 +44,3 @@ function Relatorio(PE,AL) {
     ClassificaoIMC(imc)
 }
 Relatorio(peso,altura)
-
